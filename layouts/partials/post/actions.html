@@ -2,8 +2,8 @@
   <nav>
     <ul class="post-actions post-action-nav">
       <li class="post-action">
-        {{ with .Prev }}
-          <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
+        {{ with .PrevInSection }}
+          <a class="post-action-btn btn btn--default tooltip--top" href="{{ .Permalink }}" data-tooltip="{{ .Title }}">
         {{ else }}
           <a class="post-action-btn btn btn--disabled">
         {{ end }}
@@ -12,8 +12,8 @@
         </a>
       </li>
       <li class="post-action">
-        {{ with .Next }}
-          <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
+        {{ with .NextInSection }}
+          <a class="post-action-btn btn btn--default tooltip--top" href="{{ .Permalink }}" data-tooltip="{{ .Title }}">
         {{ else }}
           <a class="post-action-btn btn btn--disabled">
         {{ end }}
